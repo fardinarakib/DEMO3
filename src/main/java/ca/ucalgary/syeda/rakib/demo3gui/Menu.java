@@ -1,3 +1,7 @@
+package ca.ucalgary.syeda.rakib.demo3gui;
+
+import ca.ucalgary.syeda.rakib.demo3gui.Data;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

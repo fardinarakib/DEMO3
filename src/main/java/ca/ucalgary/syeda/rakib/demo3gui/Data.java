@@ -1,4 +1,4 @@
-
+package ca.ucalgary.syeda.rakib.demo3gui;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -115,5 +115,13 @@ public class Data {
 
     public static boolean storeNewStudent() {
         return false;
+    }
+
+    public void addStudent(String name, String major, String year) {
+    }
+
+    public ArrayList<String> getAllStudentsAsStringList() {
+
+        return null;
     }
 }
