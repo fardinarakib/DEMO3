@@ -67,7 +67,7 @@
                         <id>default-cli</id>
                         <configuration>
                             <mainClass>
-                                ca.ucalgary.syeda.rakib.demo3gui/ca.ucalgary.syeda.rakib.demo3gui.HelloApplication
+                                ca.ucalgary.syeda.rakib.demo3gui/ca.ucalgary.syeda.rakib.demo3gui.MainGUI
                             </mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
