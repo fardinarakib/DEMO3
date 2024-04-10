@@ -28,19 +28,4 @@
         </menus>
       </MenuBar>
    </top>
-   <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
-         <children>
-            <Button mnemonicParsing="false" text="Enter a new student" />
-            <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" text="Year" />
-            <Button layoutX="10.0" layoutY="20.0" mnemonicParsing="false" text="Major" />
-            <Button layoutX="10.0" layoutY="41.0" mnemonicParsing="false" text="UCID" />
-            <Button layoutX="10.0" layoutY="103.0" mnemonicParsing="false" text="Age" />
-            <Button layoutX="10.0" layoutY="103.0" mnemonicParsing="false" text="Personal days used" />
-            <Button layoutX="10.0" layoutY="134.0" mnemonicParsing="false" text="amount of hours studied in one week" />
-            <Button layoutX="10.0" layoutY="196.0" mnemonicParsing="false" text="amount of assignments done" />
-            <Button layoutX="10.0" layoutY="227.0" mnemonicParsing="false" text="Print Names" />
-         </children>
-      </VBox>
-   </center>
 </BorderPane>
