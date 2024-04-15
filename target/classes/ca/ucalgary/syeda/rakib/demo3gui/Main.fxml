@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<?import java.lang.*?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.VBox?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.syeda.rakib.demo3gui.MainController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../resources/art.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalgary.syeda.rakib.demo3gui.MainController">
     <top>
         <MenuBar BorderPane.alignment="CENTER">
             <menus>
                 <Menu mnemonicParsing="false" text="FILE">
                     <items>
-                        <MenuItem fx:id="LOAD" mnemonicParsing="false" onAction="#handleItemLoad" text="LOAD" />
-                        <MenuItem fx:id="ItemSave" mnemonicParsing="false" onAction="#itemSave" text="SAVE" />
+                        <MenuItem fx:id="itemLoad" mnemonicParsing="false" onAction="#handleItemLoad" text="LOAD" />
+                        <MenuItem fx:id="itemSave" mnemonicParsing="false" onAction="#itemSave" text="SAVE" />
                         <MenuItem fx:id="itemQuit" mnemonicParsing="false" onAction="#itemQuit" text="QUIT" />
                     </items>
                 </Menu>
@@ -32,18 +30,16 @@
         <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
             <children>
                 <Button fx:id="nameField" mnemonicParsing="false" onAction="#handleAddStudent" text="Enter a new student" />
-                <Button fx:id="yearField" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#addYear" text="Year" />
-                <Button fx:id="majorField" layoutX="10.0" layoutY="20.0" mnemonicParsing="false" onAction="#addMajor" text="Major" />
-                <Button fx:id="idField" layoutX="10.0" layoutY="41.0" mnemonicParsing="false" onAction="#addUcid" text="UCID" />
-                <Button fx:id="ageField" layoutX="10.0" layoutY="103.0" mnemonicParsing="false" onAction="#addAge" text="Age" />
-                <Button fx:id="daysField" layoutX="10.0" layoutY="103.0" mnemonicParsing="false" onAction="#addDays" text="Personal days used" />
-                <Button fx:id="amountField" layoutX="10.0" layoutY="134.0" mnemonicParsing="false" onAction="#addHours" text="amount of hours studied in one week" />
-                <Button fx:id="assignmentField" layoutX="10.0" layoutY="196.0" mnemonicParsing="false" onAction="#addAmount" text="amount of assignments done" />
-                <Button fx:id="printnameField" layoutX="10.0" layoutY="227.0" mnemonicParsing="false" onAction="#printNames" text="Print Names" />
+                <Button fx:id="yearField" mnemonicParsing="false" onAction="#addYear" text="Year" />
+                <Button fx:id="majorField" mnemonicParsing="false" onAction="#addMajor" text="Major" />
+                <Button fx:id="idField" mnemonicParsing="false" onAction="#addUcid" text="UCID" />
+                <Button fx:id="ageField" mnemonicParsing="false" onAction="#addAge" text="Age" />
+                <Button fx:id="daysField" mnemonicParsing="false" onAction="#addDays" text="Personal days used" />
+                <Button fx:id="amountField" mnemonicParsing="false" onAction="#addHours" text="amount of hours studied in one week" />
+                <Button fx:id="assignmentField" mnemonicParsing="false" onAction="#addAmount" text="amount of assignments done" />
+                <Button fx:id="printNameField" mnemonicParsing="false" onAction="#printNames" text="Print Names" />
                 <ListView fx:id="studentListView" />
-
             </children>
-
         </VBox>
     </center>
 </BorderPane>

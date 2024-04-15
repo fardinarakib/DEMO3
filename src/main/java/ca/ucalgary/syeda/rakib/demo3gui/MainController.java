@@ -133,3 +133,7 @@ public class MainController {
         return dialog.showAndWait();
     }
 }
+//minor bug fixes from chatgpt
+//minor concept reviews from youtube
+//subtle changes in knowledge to stackoverflow.com
+//minor solution for the inital errors from reddit

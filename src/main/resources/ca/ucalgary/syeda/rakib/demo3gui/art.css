@@ -1,0 +1,27 @@
+/* art.css */
+.root {
+    -fx-background-color: #E6E6FA; /* Lavender */
+}
+
+.button {
+    -fx-background-color: #DA70D6; /* Orchid */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.menu-item {
+    -fx-background-color: #DDA0DD; /* Plum */
+    -fx-text-fill: white;
+}
+
+.list-view {
+    -fx-background-color: #FFB6C1; /* Light Pink */
+}
+
+.list-cell {
+    -fx-text-fill: #C71585; /* Medium Violet Red */
+}
+
+.dialog-pane {
+    -fx-background-color: #FFF0F5; /* Lavender Blush */
+}

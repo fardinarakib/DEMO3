@@ -1,0 +1,29 @@
+/* art.css */
+.root {
+    -fx-background-color: #E6E6FA; /* Lavender */
+}
+
+.button {
+    -fx-background-color: #DA70D6; /* Orchid */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8px;
+}
+
+.menu-item {
+    -fx-background-color: #DDA0DD; /* Plum */
+    -fx-text-fill: white;
+}
+
+.menu-bar {
+    -fx-background-color: #DA70D6; /* Similar to button background */
+}
+
+.list-view {
+    -fx-background-color: #FFB6C1; /* Light Pink */
+    -fx-text-fill: #C71585; /* Medium Violet Red */
+}
+
+.list-cell {
+    -fx-padding: 5px;
+}
