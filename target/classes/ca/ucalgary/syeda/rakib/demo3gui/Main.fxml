@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.Menu?>
@@ -20,7 +24,7 @@
                 </Menu>
                 <Menu mnemonicParsing="false" text="HELP">
                     <items>
-                        <MenuItem mnemonicParsing="false" text="ABOUT" />
+                        <MenuItem onAction="#showAboutDialog" text="About" />
                     </items>
                 </Menu>
             </menus>
@@ -35,10 +39,21 @@
                 <Button fx:id="idField" mnemonicParsing="false" onAction="#addUcid" text="UCID" />
                 <Button fx:id="ageField" mnemonicParsing="false" onAction="#addAge" text="Age" />
                 <Button fx:id="daysField" mnemonicParsing="false" onAction="#addDays" text="Personal days used" />
-                <Button fx:id="amountField" mnemonicParsing="false" onAction="#addHours" text="amount of hours studied in one week" />
-                <Button fx:id="assignmentField" mnemonicParsing="false" onAction="#addAmount" text="amount of assignments done" />
-                <Button fx:id="printNameField" mnemonicParsing="false" onAction="#printNames" text="Print Names" />
+                <Button fx:id="amountField" mnemonicParsing="false" onAction="#addHours" text="Amount of hours studied in one week" />
+                <Button fx:id="assignmentField" mnemonicParsing="false" onAction="#addAmount" text="Amount of assignments done" />
+                <Button fx:id="printNamesButton" mnemonicParsing="false" onAction="#printNames" text="Print Names" />
+                <Button fx:id="printAverageAgeButton" mnemonicParsing="false" onAction="#printAverageAge" text="Print Average Age" />
+                <Button fx:id="printStudentsNeedingAttentionButton" mnemonicParsing="false" onAction="#printStudentsNeedingAttention" text="Print Students Needing Attention" />
+                <Button fx:id="predictNextYearStudyHoursButton" mnemonicParsing="false" onAction="#predictNextYearStudyHours" text="Predict Next Year's Study Hours" />
+                <Button fx:id="printSortedStudentsButton" mnemonicParsing="false" onAction="#printSortedStudents" text="Print Sorted Students" />
                 <ListView fx:id="studentListView" />
+                <VBox spacing="10">
+                    <Button fx:id="UpdateStudentDetails" onAction="#handleUpdateStudentDetails"
+                            text="Update Student Details"/>
+                    <Button fx:id="SaveToCSV" onAction="#handleSaveToCSV" text="Save Students to CSV"/>
+                    <Button fx:id="LoadFromCSV" onAction="#handleLoadFromCSV" text="Load Students from CSV"/>
+                </VBox>
+
             </children>
         </VBox>
     </center>

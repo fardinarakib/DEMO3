@@ -10,15 +10,16 @@ import java.io.IOException;
 public class MainGUI extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        // Load the FXML file
+        // Loads the FXML file
         FXMLLoader fxmlLoader = new FXMLLoader(MainGUI.class.getResource("Main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 520, 520);
+        Scene scene = new Scene(fxmlLoader.load(), 500, 700);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("path/to/aboutDialog.fxml"));
 
-        // Load the CSS file
+        // Loads the CSS file
         scene.getStylesheets().add(getClass().getResource("art.css").toExternalForm());
 
-        // Set the stage
-        stage.setTitle("Hello!");
+        // Sets the stage
+        stage.setTitle("STUDENT MANAGEMENT INFORMATION!!");
         stage.setScene(scene);
         stage.show();
     }
